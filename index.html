@@ -5,19 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Bill
+  <section id="logo">
+    <img src="./images/logo.svg" alt="Logo">
+  </section>
 
+  <div class="container">
+    <div class="leftSide">
+      <form>
+        <label for="Bill">Bill</label><br>
+        <input type="text" name="Bill" id="Bill"><br>
+      </form>
+      <p>Select Tip %</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <button class="PercentageButtons">
+                <h2>5%</h2>
+              </button>
+              <button class="PercentageButtons">
+                <h2>10%</h2>
+              </button>
+              <button class="PercentageButtons">
+                <h2>15%</h2>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="PercentageButtons">
+                <h2>25%</h2>
+              </button>
+              <button class="PercentageButtons">
+                <h2>50%</h2>
+              </button>
+              <button class="PercentageButtons">
+                <h2>Custom</h2>
+              </button>
+            </td>
+          </tr>
+        </tbody>        
+      </table>
+
+      <form>
+        <label for="NPeple">Number of People</label>
+        <input type="number" name="NPeople" id="NPeople">
+      </form>
+      
+    </div>
+    <div class="rightSide">
+      dsds
+
+    </div>
+    
+    
+
+  </div>
+  
   Select Tip %
   5%
   10%
@@ -35,6 +85,7 @@
   / person
 
   Reset
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -1,0 +1,45 @@
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+#logo img {
+    height: auto;
+    width: 70px;
+}
+
+.container {
+    /*Taking into consideration:
+        - White container looks like it occupies 80% of the width
+            45% of 1440px = 720px
+            720-40 = 680px
+            370-40 = 330px
+    */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 330px;
+    width: 680px;
+    background-color:hsl(0, 0%, 100%);
+    margin: auto 360px;
+    border: 30px solid white;
+    border-radius: 4%;
+}
+
+.leftSide{
+}
+
+.rightSide {
+    background-color: hsl(183, 100%, 15%);
+    height: 100%;
+    border-radius: 6%;
+}   
+
