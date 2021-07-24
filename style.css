@@ -14,7 +14,7 @@ body {
 
 #logo img {
     height: auto;
-    width: 70px;
+    width: 80px;
 }
 
 .container {
@@ -26,15 +26,103 @@ body {
     */
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 330px;
-    width: 680px;
+
     background-color:hsl(0, 0%, 100%);
-    margin: auto 360px;
-    border: 30px solid white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    height: 400px;
+    width: 800px;
+
+    border: 35px solid white;
     border-radius: 4%;
+    
+    margin: auto;
 }
 
 .leftSide{
+    color: hsl(186, 14%, 43%);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+input[type=text] {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(185, 41%, 84%);
+    
+    width: 80%;
+    height: 30px;
+
+    border: 0px;
+    border-radius: 5%;
+
+    margin-top: 10px;
+    padding-left: 40px;
+    
+}
+
+#F1 {
+    background-image: url(/images/icon-dollar.svg);
+    background-position: 10px 10px;
+    background-size: auto 12px;
+    background-repeat: no-repeat;
+}
+
+.titles {
+    margin: 30px 0px 10px;
+}
+
+.gridButtons {
+    display: inline-grid;
+    width: 90%;
+    grid-template-columns: 33% 33% 33%;    
+    gap: 10px;
+}
+
+.percentageButton {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    
+    width: 100px;
+
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+
+    border: none;
+    border-radius: 5%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#customButton{
+    background-color: hsl(189, 41%, 97%);
+    color:  hsl(186, 14%, 43%);
+    
+    width: 100px;
+
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+
+    border: none;
+    border-radius: 5%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#F2 {
+    background-image: url(/images/icon-person.svg);
+    background-position: 10px 10px;
+    background-size: auto 12px;
+    background-repeat: no-repeat;
 }
 
 .rightSide {
