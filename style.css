@@ -142,10 +142,17 @@ input[type=number]:focus{
 
 .rightColumn {
     background-color: hsl(183, 100%, 15%);
+    color: white;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [areaCalculation] 50% [reset] 50%;
+
     height: 76%;
     border-radius: 6%;
-    padding: 12% 10%;
-    color: white;
+    
+    padding: 10% 10% 8% 10%;
+    
 }   
 
 
@@ -189,16 +196,15 @@ input[type=number]:focus{
 }
 
 #reset {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: auto;
+    align-self: flex-end;
 }
 
 .calculationArea {
     display: grid;
     grid-template-columns: [labels] 50% [price] 50%;
-    grid-template-rows: [tipAmount] 33% [total] 33% [reset] 33%;
+    grid-template-rows: [tipAmount] 50% [total] 50%;
     row-gap: 30%;
 }
 
@@ -207,11 +213,16 @@ input[type=number]:focus{
    color: hsl(172, 67%, 45%); 
 }
 
+button:disabled {
+    background-color: hsl(0, 100%, 0%);
+    color:  hsl(0, 100%, 15%);
+}
+
 #resetButton {
-    background-color: hsl(189, 41%, 97%);
-    color:  hsl(186, 14%, 43%);
+    background-color: hsl(172, 67%, 45%);
+    color:  hsl(183, 100%, 15%);
     
-    width: 100px;
+    width: 100%;
 
     font-size: 20px;
     font-family: 'Space Mono', monospace;
@@ -224,3 +235,4 @@ input[type=number]:focus{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
