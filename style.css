@@ -25,10 +25,12 @@ body {
             370-40 = 330px
     */
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: [left] 50% [right] 50%;
 
     background-color:hsl(0, 0%, 100%);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-size: 15px;
+    font-weight: 700;
 
     height: 400px;
     width: 800px;
@@ -39,38 +41,51 @@ body {
     margin: auto;
 }
 
-.leftSide{
+.leftColumn{
     color: hsl(186, 14%, 43%);
 
-    font-size: 15px;
-    font-weight: 700;
+   
 
     margin-top: 20px;
 }
 
-input[type=text] {
+input[type=number] {
     background-color: hsl(189, 41%, 97%);
-    color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
     
     width: 80%;
     height: 30px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    text-align:;
+    text-align: right;
+    -moz-appearance: textfield;
+
 
     border: 0px;
     border-radius: 5%;
 
     margin-top: 10px;
+    margin-right: 30px;
     padding-left: 40px;
+
     
 }
 
+input[type=number]:focus{
+    outline: none !important;
+}
+
 #F1 {
-    background-image: url(/images/icon-dollar.svg);
+    background-image: url(./images/icon-dollar.svg);
     background-position: 10px 10px;
     background-size: auto 12px;
     background-repeat: no-repeat;
 }
 
-.titles {
+.paddingTitles {
     margin: 30px 0px 10px;
 }
 
@@ -119,15 +134,93 @@ input[type=text] {
 
 
 #F2 {
-    background-image: url(/images/icon-person.svg);
+    background-image: url(./images/icon-person.svg);
     background-position: 10px 10px;
     background-size: auto 12px;
     background-repeat: no-repeat;
 }
 
-.rightSide {
+.rightColumn {
     background-color: hsl(183, 100%, 15%);
-    height: 100%;
+    height: 76%;
     border-radius: 6%;
+    padding: 12% 10%;
+    color: white;
 }   
 
+
+.subtitleGreen {
+    color: hsl(185, 41%, 84%);
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+
+.tipAmount{
+    grid-column-start: 1;
+    grid-column-end: span [price];
+    grid-row-start: 1;
+    grid-row-end: span [total];
+    align-self: center;  
+}
+
+.totalLabel {
+    grid-column-start: 1;
+    grid-column-end: span [price];
+    grid-row-start: 2;
+    grid-row-end: span [total];
+    align-self: center;
+}
+
+.tipPrice{
+    grid-column-start: 2;
+    grid-column-end: span [price];
+    grid-row-start: 1;
+    grid-row-end: span [total];   
+    justify-self: end;    
+}
+
+.totalPrice{
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    grid-row-end: span [total];
+    justify-self: end;    
+}
+
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.calculationArea {
+    display: grid;
+    grid-template-columns: [labels] 50% [price] 50%;
+    grid-template-rows: [tipAmount] 33% [total] 33% [reset] 33%;
+    row-gap: 30%;
+}
+
+.priceLabel {
+   font-size: 42px;
+   color: hsl(172, 67%, 45%); 
+}
+
+#resetButton {
+    background-color: hsl(189, 41%, 97%);
+    color:  hsl(186, 14%, 43%);
+    
+    width: 100px;
+
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+
+    border: none;
+    border-radius: 5%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -20,16 +20,16 @@
 
   <div class="container">
 
-    <div class="leftSide">
+    <div class="leftColumn">
      
       <!--Bill-->
       <form> 
         <label for="Bill" id="Bill">Bill</label><br>
-        <input type="text" name="Bill" class="forms" id="F1"><br>
+        <input type="number" name="Bill" class="forms" id="F1"><br>
       </form>
      
       <!--Select Tip Label-->
-      <div class="titles">
+      <div class="paddingTitles">
         Select Tip %
       </div>
       
@@ -46,24 +46,42 @@
       </div>
 
 
-      <form class="titles">
+      <form class="paddingTitles">
         <label for="NPeple">Number of People</label>
-        <input type="text" name="NPeople" class="forms" id="F2">
+        <input type="number" name="NPeople" class="forms" id="F2">
       </form>
       
     </div>
-    <div class="rightSide">
-       
-      <!--Number of People
-
-        Tip Amount
-        / person
-
-        Total
-        / person
-
-        Reset
--->
+    <div class="rightColumn">
+      <div class="calculationArea">
+        <div class="tipAmount">
+          Tip Amount
+          <div class="subtitleGreen" >
+          / person
+          </div>
+        </div>
+        <div class="totalLabel">
+          Total
+          <div class="subtitleGreen">
+          / person
+          </div>
+        </div>
+        <div class="tipPrice">
+          <div class="priceLabel">
+            $0.00
+          </div>
+        </div>
+        <div class="totalPrice">
+          <div class="priceLabel">
+            $0.00
+          </div>
+        </div>
+        <div id="reset">
+          <button id="resetButton">RESET</button>
+        </div>
+      </div>
+      
+      
         
     </div>
     
