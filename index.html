@@ -26,8 +26,8 @@
       <!--Bill-->
       <form> 
         <label for="Bill" id="Bill">Bill</label><br>
-        <input type="number" name="Bill" class="forms" id="F1"><br>
-      </form>
+        <input type="number" value="0" name="Bill" class="forms" id="F1">
+      </form>  
      
       <!--Select Tip Label-->
       <div class="paddingTitles">
@@ -38,22 +38,24 @@
       <!--GRID of buttons-->
       
       <div class="gridButtons">
-          <button class="percentageButton">5%</button>
-          <button class="percentageButton">10%</button>
-          <button class="percentageButton">15%</button>
-          <button class="percentageButton">25%</button>
-          <button class="percentageButton">50%</button>
+          <button class="percentageButton" onclick="selectTip(this)">5%</button>
+          <button class="percentageButton" onclick="selectTip(this)">10%</button>
+          <button class="percentageButton" onclick="selectTip(this)">15%</button>
+          <button class="percentageButton" onclick="selectTip(this)">25%</button>
+          <button class="percentageButton" onclick="selectTip(this)">50%</button>
           <button id="customButton">Custom</button>
       </div>
 
+      <!--Number of People-->
 
       <form class="paddingTitles">
         <label for="NPeple">Number of People</label>
-        <input type="number" name="NPeople" class="forms" id="F2">
-      </form>
+        <input type="number" name="NPeople" class="forms" id="F2" value="0">
+      </form> 
       
     </div>
     <div class="rightColumn">
+      <!--Tip amount and Total-->
       <div class="calculationArea">
         <div class="tipAmount">
           Tip Amount
@@ -68,19 +70,16 @@
           </div>
         </div>
         <div class="tipPrice">
-          <div class="priceLabel">
             $0.00
-          </div>
         </div>
         <div class="totalPrice">
-          <div class="priceLabel">
             $0.00
-          </div>
         </div>
       </div>
 
+      <!--reset button-->
       <div id="reset">
-        <button id="resetButton" disabled>RESET</button>
+        <button onclick="reset()" id="resetButton" disabled>RESET</button>
       </div>
     </div>
   </div>
@@ -93,7 +92,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/LearningBizz">Manuel Navid</a>.
   </div>
 </body>
 </html>

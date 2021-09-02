@@ -53,13 +53,12 @@ input[type=number] {
     background-color: hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
     
-    width: 80%;
+    width: 75%;
     height: 30px;
 
     font-family: 'Space Mono', monospace;
     font-size: 24px;
     font-weight: 700;
-    text-align:;
     text-align: right;
     -moz-appearance: textfield;
 
@@ -76,13 +75,18 @@ input[type=number] {
 
 input[type=number]:focus{
     outline: none !important;
-}
+    border: 3px solid hsl(172, 67%, 45%);
+  }
 
 #F1 {
     background-image: url(./images/icon-dollar.svg);
     background-position: 10px 10px;
     background-size: auto 12px;
     background-repeat: no-repeat;
+}
+
+input#F1.forms {
+    padding-right: 15px;
 }
 
 .paddingTitles {
@@ -140,6 +144,10 @@ input[type=number]:focus{
     background-repeat: no-repeat;
 }
 
+input#F2.forms {
+    padding-right: 15px;
+}
+
 .rightColumn {
     background-color: hsl(183, 100%, 15%);
     color: white;
@@ -177,6 +185,7 @@ input[type=number]:focus{
     grid-row-start: 2;
     grid-row-end: span [total];
     align-self: center;
+    
 }
 
 .tipPrice{
@@ -184,7 +193,9 @@ input[type=number]:focus{
     grid-column-end: span [price];
     grid-row-start: 1;
     grid-row-end: span [total];   
-    justify-self: end;    
+    justify-self: end; 
+    font-size: 42px;
+    color: hsl(172, 67%, 45%);    
 }
 
 .totalPrice{
@@ -192,7 +203,9 @@ input[type=number]:focus{
     grid-column-end: auto;
     grid-row-start: 2;
     grid-row-end: span [total];
-    justify-self: end;    
+    justify-self: end;
+    font-size: 42px;
+    color: hsl(172, 67%, 45%); 
 }
 
 #reset {
