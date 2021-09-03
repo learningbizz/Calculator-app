@@ -26,57 +26,23 @@ body {
     */
     display: grid;
     grid-template-columns: [left] 50% [right] 50%;
-
     background-color:hsl(0, 0%, 100%);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     font-size: 15px;
     font-weight: 700;
-
     height: 400px;
     width: 800px;
-
     border: 35px solid white;
     border-radius: 4%;
-    
     margin: auto;
 }
 
 .leftColumn{
     color: hsl(186, 14%, 43%);
-
-   
-
+    display: grid;
+    grid-template-rows: auto;
     margin-top: 20px;
 }
-
-input[type=number] {
-    background-color: hsl(189, 41%, 97%);
-    color: hsl(183, 100%, 15%);
-    
-    width: 75%;
-    height: 30px;
-
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: right;
-    -moz-appearance: textfield;
-
-
-    border: 0px;
-    border-radius: 5%;
-
-    margin-top: 10px;
-    margin-right: 30px;
-    padding-left: 40px;
-
-    
-}
-
-input[type=number]:focus{
-    outline: none !important;
-    border: 3px solid hsl(172, 67%, 45%);
-  }
 
 #F1 {
     background-image: url(./images/icon-dollar.svg);
@@ -89,53 +55,50 @@ input#F1.forms {
     padding-right: 15px;
 }
 
-.paddingTitles {
-    margin: 30px 0px 10px;
-}
+.tip {
+    grid-row-start: 2;
+    grid-row-end: 3;}
 
 .gridButtons {
     display: inline-grid;
     width: 90%;
     grid-template-columns: 33% 33% 33%;    
-    gap: 10px;
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .percentageButton {
     background-color: hsl(183, 100%, 15%);
     color: white;
-    
     width: 100px;
-
     font-size: 20px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     text-align: center;
-
     border: none;
     border-radius: 5%;
-
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.percentageButton:hover {
+    background-color: #9fe8de;
+    color: #004845;
 }
 
 #customButton{
     background-color: hsl(189, 41%, 97%);
     color:  hsl(186, 14%, 43%);
-    
     width: 100px;
-
     font-size: 20px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     text-align: center;
-
     border: none;
     border-radius: 5%;
-
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 
 #F2 {
     background-image: url(./images/icon-person.svg);
@@ -148,17 +111,54 @@ input#F2.forms {
     padding-right: 15px;
 }
 
+input[type=number] {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    width: 75%;
+    height: 30px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    -moz-appearance: textfield;
+    border: 0px;
+    border-radius: 5%;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding-left: 40px;
+    border: 3px solid white;
+
+}
+
+input[type=number]:focus{
+    outline: none !important;
+    border: 3px solid hsl(172, 67%, 45%);
+  }
+
+.nperrbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#nplabel {
+    order: 1;
+}
+
+#errornp {
+    order: 2;
+    color: #C8826D;
+}
+
 .rightColumn {
     background-color: hsl(183, 100%, 15%);
     color: white;
-
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: [areaCalculation] 50% [reset] 50%;
-
-    height: 76%;
-    border-radius: 6%;
-    
+    height: 80%;
+    border-radius: 6%; 
     padding: 10% 10% 8% 10%;
     
 }   
@@ -221,10 +221,6 @@ input#F2.forms {
     row-gap: 30%;
 }
 
-.priceLabel {
-   font-size: 42px;
-   color: hsl(172, 67%, 45%); 
-}
 
 button:disabled {
     background-color: hsl(0, 100%, 0%);
@@ -234,18 +230,18 @@ button:disabled {
 #resetButton {
     background-color: hsl(172, 67%, 45%);
     color:  hsl(183, 100%, 15%);
-    
     width: 100%;
-
     font-size: 20px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     text-align: center;
-
     border: none;
     border-radius: 5%;
-
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+#resetButton:hover {
+    background-color: #9fe8de;
+    color: #004845;
+}

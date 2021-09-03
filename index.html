@@ -29,27 +29,27 @@
         <input type="number" value="0" name="Bill" class="forms" id="F1">
       </form>  
      
-      <!--Select Tip Label-->
-      <div class="paddingTitles">
-        Select Tip %
-      </div>
-      
-     
       <!--GRID of buttons-->
-      
-      <div class="gridButtons">
+      <div class="tip">
+        <label for="Tip" id="Tip">Select Tip %</label><br>
+        <div class="gridButtons">
           <button class="percentageButton" onclick="selectTip(this)">5%</button>
           <button class="percentageButton" onclick="selectTip(this)">10%</button>
           <button class="percentageButton" onclick="selectTip(this)">15%</button>
           <button class="percentageButton" onclick="selectTip(this)">25%</button>
           <button class="percentageButton" onclick="selectTip(this)">50%</button>
           <button id="customButton">Custom</button>
+        </div>
       </div>
+      
 
       <!--Number of People-->
 
       <form class="paddingTitles">
-        <label for="NPeple">Number of People</label>
+        <div class="nperrbox">
+          <label for="NPeple" id="nplabel">Number of People</label>
+          <div id="errornp"></div>
+        </div>
         <input type="number" name="NPeople" class="forms" id="F2" value="0">
       </form> 
       
@@ -79,7 +79,7 @@
 
       <!--reset button-->
       <div id="reset">
-        <button onclick="reset()" id="resetButton" disabled>RESET</button>
+        <button id="resetButton" onclick="reset()" >RESET</button>
       </div>
     </div>
   </div>
