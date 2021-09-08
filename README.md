@@ -2,8 +2,8 @@
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-design-empty.jpg)
 
-## **Welcome! 👋**
----
+# **Welcome! 👋**
+
 I decided to take on the challenge by Frontendmentor to create the **desktop version** of the [Tip Calculator App.](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 \
 \
@@ -14,7 +14,6 @@ To do this challenge, I used:
   
   
 ## **The Challenge**
----
 
 - View the closest possible layout to the design given in the app (like the one above)
   
@@ -24,7 +23,7 @@ To do this challenge, I used:
   
 
 ## **Setup**
----
+
 - Download the git repo to your local device
   
 - Open `index.html`
