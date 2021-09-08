@@ -13,7 +13,7 @@ function reset() {
     2. Tip amount and total reset to $0.00
     */
 
-    //Point 1
+    // Point 1
     document.getElementById('F1').value = 0;
     document.getElementById('F2').value = 0;
     document.getElementById('F1').style.outline = null;
@@ -22,7 +22,7 @@ function reset() {
     document.getElementById("errorbill").innerHTML = "";
     document.getElementById('custom').value = "";
 
-    //Point 3
+    // Point 2
     document.querySelector(".tipPrice").textContent = "$0.00";
     document.querySelector(".totalPrice").textContent = "$0.00";
 
@@ -31,7 +31,7 @@ function reset() {
 
 
 function selectTip(button) {
-    //reseting np & bill and text size of area of calculation if it was too large
+    // Reseting np & bill and text size of area of calculation if it was too large
     document.getElementById('F2').style.outline = null;
     document.getElementById("errornp").innerHTML = "";
     document.getElementById('F1').style.outline = null;
