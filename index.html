@@ -6,7 +6,6 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="myscript.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
@@ -25,7 +24,10 @@
      
       <!--Bill-->
       <form> 
-        <label for="Bill" id="Bill">Bill</label><br>
+        <div class="billerrbox">
+          <label for="Bill" id="Bill">Bill</label><br>
+          <div id="errorbill"></div>
+        </div>
         <input type="number" value="0" name="Bill" class="forms" id="F1">
       </form>  
      
@@ -38,7 +40,7 @@
           <button class="percentageButton" onclick="selectTip(this)">15%</button>
           <button class="percentageButton" onclick="selectTip(this)">25%</button>
           <button class="percentageButton" onclick="selectTip(this)">50%</button>
-          <button id="customButton">Custom</button>
+          <input type="text" id="custom" placeholder="Custom">
         </div>
       </div>
       
@@ -88,11 +90,7 @@
   <br>
   <br>
   <br>
-  <br>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/LearningBizz">Manuel Navid</a>.
-  </div>
 </body>
+<script src="myscript.js"></script>
 </html>

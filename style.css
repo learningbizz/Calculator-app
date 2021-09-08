@@ -12,18 +12,7 @@ body {
     padding-bottom: 80px;
 }
 
-#logo img {
-    height: auto;
-    width: 80px;
-}
-
 .container {
-    /*Taking into consideration:
-        - White container looks like it occupies 80% of the width
-            45% of 1440px = 720px
-            720-40 = 680px
-            370-40 = 330px
-    */
     display: grid;
     grid-template-columns: [left] 50% [right] 50%;
     background-color:hsl(0, 0%, 100%);
@@ -49,6 +38,7 @@ body {
     background-position: 10px 10px;
     background-size: auto 12px;
     background-repeat: no-repeat;
+
 }
 
 input#F1.forms {
@@ -57,7 +47,8 @@ input#F1.forms {
 
 .tip {
     grid-row-start: 2;
-    grid-row-end: 3;}
+    grid-row-end: 3;
+}
 
 .gridButtons {
     display: inline-grid;
@@ -86,18 +77,29 @@ input#F1.forms {
     color: #004845;
 }
 
-#customButton{
-    background-color: hsl(189, 41%, 97%);
-    color:  hsl(186, 14%, 43%);
+.percentageButton:focus {
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#custom{
+    background-color: #f4fafa;
+    color: #004845;
     width: 100px;
     font-size: 20px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     text-align: center;
-    border: none;
+    border: 2px white;
     border-radius: 5%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+input#custom:focus{
+    outline: none !important;
+    border: 2px solid hsl(172, 67%, 45%);
 }
 
 #F2 {
@@ -142,14 +144,22 @@ input[type=number]:focus{
     width: 90%;
 }
 
-#nplabel {
-    order: 1;
+.billerrbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
 }
 
 #errornp {
-    order: 2;
     color: #C8826D;
 }
+
+#errorbill {
+    color: #C8826D;
+}
+
+
 
 .rightColumn {
     background-color: hsl(183, 100%, 15%);
