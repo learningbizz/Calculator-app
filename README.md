@@ -4,7 +4,6 @@
 <p align="center">
   <img width="100%" src="./showcase.gif" alt="![Design preview for the Tip calculator app coding challenge]()">
 </p>
-<br>
 
 <h1 align="left"><strong>Welcome! 👋
 </h1></strong>
