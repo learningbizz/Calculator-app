@@ -9,8 +9,8 @@ customTip.addEventListener('input', selectCustomTip);
 function reset() {
     /*
     Two things have to happen:
-    1. Bill and Number of People go back to 0
-    2. Tip amount and total reset to 0 -> Automatic?
+    1. Reset the Bill and Number of people forms and errors
+    2. Tip amount and total reset to $0.00
     */
 
     //Point 1
@@ -79,13 +79,12 @@ function error() {
     if(np <= 0) {
         document.getElementById('F2').style.outline = "solid #C8826D"
         if (np < 0) 
-            document.getElementById("errornp").innerHTML = "Can't be negative!";
+            document.getElementById("errornp").innerHTML = "Were you cooking the food?";
         else
-        document.getElementById("errornp").innerHTML = "Can't be zero";
+        document.getElementById("errornp").innerHTML = "Nobody ate the food? :(";
     }
     if (bill < 0) {
         document.getElementById('F1').style.outline = "solid #C8826D"
-        document.getElementById("errorbill").innerHTML = "Can't be negative!";
-
+        document.getElementById("errorbill").innerHTML = "Did you wash dishes for the food?";
     }
 }
