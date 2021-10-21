@@ -1,4 +1,4 @@
-<h1 align="center"><strong>🖩 Tip Calculator App 🖩
+<h1 align="center"><strong>🧮 Tip Calculator App 🧮
 </h1></strong>
 
 <p align="center">
